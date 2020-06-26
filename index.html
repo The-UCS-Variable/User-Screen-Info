@@ -2,7 +2,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Display Screen Properties</title>
+  <title>Screen Info</title>
+  <meta name="author" content="UCS">
+  <meta name="description" content="Display and Browser Info">
+  <meta name="theme-color" content="#FF1439"/>
   <style>
     table{
       width: 200px;
@@ -40,10 +43,6 @@
       <td id="h2"></td>
     </tr>
     <tr>
-      <th>Color Depth</th>
-      <td id="cd" colspan="2"></td>
-    </tr>
-    <tr>
       <th>Pixel Depth</th>
       <td id="pd" colspan="2"></td>
     </tr>
@@ -71,7 +70,6 @@ document.getElementById("w1").innerHTML = screen.width;
 document.getElementById("w2").innerHTML = window.innerWidth;
 document.getElementById("h1").innerHTML = screen.height;
 document.getElementById("h2").innerHTML = window.innerHeight;
-document.getElementById("cd").innerHTML = screen.colorDepth;
 document.getElementById("pd").innerHTML = screen.pixelDepth;
 document.getElementById("bp").innerHTML = navigator.platform;
 document.getElementById("bv").innerHTML = navigator.appVersion;

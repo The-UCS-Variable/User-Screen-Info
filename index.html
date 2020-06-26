@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Screen Properties</title>
+  <style>
+    table{
+      width: 100px;
+      border-collapse: collapse;
+    }
+    td, th {
+      border: 2px solid #dddddd;
+      text-align: left;
+      padding: 10px;
+      font-size: 18px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Display Screen Properties</h1>
+  <table>
+    <tr>
+      <th>-</th>
+      <th>Screen</th>
+      <th>Browser</th>
+    </tr>
+    <tr>
+      <th>Width</th>
+      <td id="w1"></td>
+      <td id="w2"></td>
+    </tr>
+    <tr>
+      <th>Height</th>
+      <td id="h1"></td>
+      <td id="h2"></td>
+    </tr>
+    <tr>
+      <th>Color Depth</th>
+      <td id="cd" colspan="2"></td>
+    </tr>
+    <tr>
+      <th>Pixel Depth</th>
+      <td id="pd" colspan="2"></td>
+    </tr>
+    <tr>
+      <th>Browser Platform</th>
+      <td></td>
+      <td id="bp"></td>
+    </tr>
+    <tr>
+      <th>Browser Version</th>
+      <td></td>
+      <td id="bv"></td>
+    </tr>
+    <tr>
+      <th>Browser Language</th>
+      <td></td>
+      <td id="la"></td>
+    </tr>
+  </table>
+  
+
+
+<script>
+document.getElementById("w1").innerHTML = screen.width;
+document.getElementById("w2").innerHTML = window.innerWidth;
+document.getElementById("h1").innerHTML = screen.height;
+document.getElementById("h2").innerHTML = window.innerHeight;
+document.getElementById("cd").innerHTML = screen.colorDepth;
+document.getElementById("pd").innerHTML = screen.pixelDepth;
+document.getElementById("bp").innerHTML = navigator.platform;
+document.getElementById("bv").innerHTML = navigator.appVersion;
+document.getElementById("la").innerHTML = navigator.language;
+</script>
+</body>
+</html>
